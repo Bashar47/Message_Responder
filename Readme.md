@@ -11,5 +11,5 @@ Dieses Programm simuliert mich und beantwortet meine Nachrichten automatisch bas
 pip install flask
 pip install openai
 ```
-3. Bitte, schreiben einen Dialog mit typischen Sätzen Ihrer Persönlichkeit
-4. Bitte seien Sie sicher ihre openai key in "chat_api.py" einzugeben
+3. Bitte, schreiben einen Dialog mit typischen Sätzen Ihrer Persönlichkeit in my_phrase.txt
+4. Bitte seien Sie sicher ihre openai key in ".env" einzugeben
