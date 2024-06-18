@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT-like Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .chat-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+        .chat-box {
+            margin-bottom: 10px;
+        }
+        .chat-box input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .chat-box input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        .chat-box input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .response {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #e9ecef;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <form class="chat-box" action="/get_response" method="POST">
+            <input type="text" name="user_input" placeholder="Type your message here..." required>
+            <input type="submit" value="Send">
+        </form>
+        {% if response %}
+        <div class="response">
+            <strong>You:</strong> {{ user_input }}<br>
+            <strong>ChatGPT:</strong> {{ response }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
