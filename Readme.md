@@ -12,4 +12,4 @@ pip install flask
 pip install openai
 ```
 3. Bitte, schreiben einen Dialog mit typischen Sätzen Ihrer Persönlichkeit
-4. please make sure to put your openai key in "app.py"
+4. please make sure to put your openai key in "chat_api.py"
