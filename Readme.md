@@ -9,7 +9,7 @@ Dieses Programm simuliert mich und beantwortet meine Nachrichten automatisch bas
 2. Navigieren Sie in das Verzeichnis:
 cd message_responder
 3. fchren Sie das Programm aus:
-4. bitte installiere nsie flask und openai:
+4. bitte installieren Sie flask und openai:
 ```bash
 pip install flask
 pip install openai
